@@ -1,0 +1,48 @@
+@value font-stats from '../variables.module.css';
+
+.section {
+  width: 270px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 5%;
+  font-family: font-stats;
+  border-radius: 2%;
+}
+
+.title {
+  text-align: center;
+  color: #475965;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 28px;
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* width: 67px; */
+  flex-grow: 1;
+  padding-top: 8px;
+  padding-bottom: 14px;
+  background-color: #f3f6f9;
+  border: 1px solid #e3e9f0;
+}
+
+.format {
+  font-size: 12px;
+}
+
+.percent {
+  padding-top: 10px;
+  font-size: 18px;
+}

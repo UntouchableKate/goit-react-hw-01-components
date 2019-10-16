@@ -1,0 +1,36 @@
+.list {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.li {
+  margin: 0 auto;
+  display: flex;
+  width: 202px;
+  flex-direction: row;
+  background-color: #fff;
+  margin-top: 12px;
+  border-radius: 1%;
+  align-items: center;
+  box-shadow: 3px 3px 9px -2px rgba(120, 120, 120, 0.66);
+}
+
+.online {
+  background-color: #64b155;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+}
+
+.offline {
+  composes: online;
+  background-color: #ed5d5c;
+}
+
+.img {
+  border-radius: 20%;
+  padding: 5px 10px 5px 10px;
+}
