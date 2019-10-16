@@ -1,7 +1,7 @@
 // Core
 import React from 'react';
-import propTypes from 'prop-types';
-// Instruments
+import PropTypes from 'prop-types';
+// InstrumentsPropTypes
 import styles from './FriendList.module.css';
 
 const Friend = ({ friend }) => (
@@ -15,11 +15,11 @@ const Friend = ({ friend }) => (
 );
 
 Friend.propTypes = {
-  friend: propTypes.shape({
-    id: propTypes.number.isRequired,
-    avatar: propTypes.string.isRequired,
-    name: propTypes.string.isRequired,
-    isOnline: propTypes.bool.isRequired,
+  friend: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
   }).isRequired,
 };
 

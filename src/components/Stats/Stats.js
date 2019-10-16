@@ -26,8 +26,13 @@ Stats.defaultProps = {
 
 Stats.propTypes = {
   title: propTypes.string,
-  // eslint-disable-next-line react/forbid-prop-types
-  stats: propTypes.array.isRequired,
+  stats: propTypes.arrayOf(
+    propTypes.shape({
+      id: propTypes.string.isRequired,
+      label: propTypes.string.isRequired,
+      percentage: propTypes.number.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default Stats;
